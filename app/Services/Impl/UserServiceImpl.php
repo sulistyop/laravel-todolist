@@ -10,6 +10,7 @@ class UserServiceImpl implements UserService
     private array $users = [
       "sulis" => "rahasia"
     ];
+
     function login(string $user, string $password): bool
     {
        if(!isset($this->users[$user])){
